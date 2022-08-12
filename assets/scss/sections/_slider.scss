@@ -1,0 +1,35 @@
+.slider__item {
+  position: relative;
+
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.slider__overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.slider__title {
+  color: #fefefe;
+
+  font-size: 1.75rem;
+}
+
+.about,
+.features,
+.gallery,
+.blog,
+.advantages__content,
+.contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  min-height: 100vh;
+
+  align-content: center;
+}

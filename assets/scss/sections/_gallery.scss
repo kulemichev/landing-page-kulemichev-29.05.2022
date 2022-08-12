@@ -1,0 +1,167 @@
+.gallery {
+  display: flex;
+
+  min-height: 100vh;
+
+  align-content: center;
+}
+
+.gallery__title {
+  text-align: center;
+}
+
+.gallery__description {
+  text-align: center;
+}
+
+.gallery-item__wrapper {
+  position: relative;
+
+  overflow: hidden;
+
+  min-height: 200px;
+  max-height: 33.33vh;
+}
+
+.gallery-item__image {
+  width: 100%;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.gallery-item__caption {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: opacity 0.5s;
+  text-align: center;
+
+  opacity: 0;
+  background-color: rgba(1, 1, 1, 0.75);
+}
+
+.gallery-item__title {
+  position: absolute;
+  right: 30px;
+  bottom: -50%;
+  left: 30px;
+
+  margin-bottom: 0;
+  transition: bottom 0.5s;
+
+  color: #fefefe;
+
+  font-weight: bold;
+}
+
+.gallery-item__link {
+  position: relative;
+  top: -50%;
+
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+
+  width: 45px;
+  height: 45px;
+  transition: top 0.5s;
+
+  color: #fefefe;
+  background-color: #ee3b24;
+
+  justify-content: center;
+
+  align-items: center;
+}
+
+.gallery-item__link:hover,
+.gallery-item__link:focus {
+  color: #fefefe;
+}
+
+.gallery-item:hover .gallery-item__image {
+  transform: scale(1.8);
+}
+
+.gallery-item:hover .gallery-item__caption {
+  opacity: 1;
+}
+
+.gallery-item:hover .gallery-item__title {
+  bottom: 15%;
+}
+
+.gallery-item:hover .gallery-item__link {
+  top: 15%;
+}
+
+@media (min-width: 576px) {
+  .gallery .container-fluid {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .gallery-item {
+    padding: 0 5px 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .gallery__description {
+    margin-bottom: 45px;
+  }
+}
+
+@media (min-width: 992px) {
+  .gallery {
+    padding-top: 105px;
+    padding-bottom: 90px;
+  }
+
+  .gallery__title {
+    margin: 0 0 45px;
+  }
+}
+
+@media (max-width: 991.8px) and (min-width: 768px) {
+  .gallery {
+    padding-top: 105px;
+    padding-bottom: 75px;
+  }
+
+  .gallery__title {
+    margin: 0 0 37.5px;
+  }
+}
+
+@media (max-width: 767.8px) {
+  .gallery__description {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 767.8px) and (min-width: 576px) {
+  .gallery {
+    padding-top: 90px;
+    padding-bottom: 60px;
+  }
+
+  .gallery__title {
+    margin: 0 0 30px;
+  }
+}
+
+@media (max-width: 575.8px) {
+  .gallery {
+    padding-top: 90px;
+    padding-bottom: 45px;
+  }
+
+  .gallery__title {
+    margin: 0 0 22.5px;
+  }
+  .gallery-item {
+    padding: 0 15px 15px;
+  }
+}
