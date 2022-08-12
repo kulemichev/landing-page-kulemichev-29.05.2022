@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+body {
+  color: #545454;
+
+  font-family: "Roboto", sans-serif;
+}
+
+section {
+  overflow: hidden;
+
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #010101;
+
+  font-family: "Roboto Slab", serif;
+}
+
+button:focus {
+  outline: none;
+}
+
+a {
+  color: #010101;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+
+  color: #ee3b24;
+}
+
+h5 {
+  font-size: 1.125rem;
+}
