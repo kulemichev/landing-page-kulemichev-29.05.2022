@@ -178,21 +178,6 @@ a:focus {
   font-size: 1.75rem;
 }
 
-.about,
-.features,
-.gallery,
-.blog,
-.advantages__content,
-.contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-line-pack: center;
-  align-content: center;
-
-  min-height: 100vh;
-}
-
 .about {
   display: -webkit-box;
   display: -ms-flexbox;
