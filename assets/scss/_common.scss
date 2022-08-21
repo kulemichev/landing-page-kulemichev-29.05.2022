@@ -3,8 +3,8 @@
 }
 
 html {
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
+  font-family: $font-header;
+  font-size: $font-size;
 }
 
 body {
@@ -23,13 +23,14 @@ h1,
 h2,
 h3,
 h4,
-h5,
 h6 {
   @extend %header;
 }
 
 h5 {
   font-size: 1.125rem;
+
+  @extend %header;
 }
 
 button:focus {
@@ -43,7 +44,7 @@ a {
   &:focus {
     text-decoration: none;
 
-    color: #ee3b24;
+    color: $color-accent;
   }
 }
 
