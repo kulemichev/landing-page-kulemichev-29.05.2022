@@ -1,109 +1,56 @@
-.navbar-inverse {
-  border: none;
-  background-color: transparent;
-
-  .navbar-nav > li > a {
-    color: #eeeeee;
-
-    &:hover {
-      color: $base-color;
-      text-shadow: 0 0 1px #ee3b24;
+.navbar-expand-lg {
+  @include lg-sm {
+    > .container,
+    > .container-fluid {
+      padding-right: $gap;
+      padding-left: $gap;
     }
   }
+  .navbar-nav {
+    .nav-item {
+      padding-right: calc($gap / 2);
+      padding-left: calc($gap / 2);
+    }
 
-  .navbar-brand {
-    height: 70px;
+    .nav-link {
+      padding-right: calc($gap / 2);
+      padding-left: calc($gap / 2);
 
-    text-transform: uppercase;
+      color: $color-light;
 
-    color: #eeeeee;
-
-    line-height: 35px;
-  }
-
-  &:not(.navbar-transparent) {
-    .navbar-toggle {
-      padding: 15px 10px;
-
-      .icon-bar {
-        width: 32px;
-
-        + .icon-bar {
-          margin-top: 8px;
-        }
+      @include lg {
+        text-align: center;
       }
     }
+  }
+}
 
-    .navbar-nav .current {
-      background-color: transparent;
+.navbar-dark {
+  .navbar-toggler {
+    border-color: rgba($color-light, 0.75);
+
+    &-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.75)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
     }
-
-    .nav > li:hover {
-      background: transparent;
-    }
   }
 }
 
-.navbar-transparent {
-  background-color: rgba(#000000, 0.7);
-
-  .navbar-brand {
-    height: 50px;
-
-    line-height: 20px;
+.progress {
+  @include lg-min {
+    height: calc($gap * 4 / 3);
   }
 }
 
-.nav > li {
-  text-align: center;
-
-  &:hover {
-    background-color: #000000;
-  }
+.bg-danger {
+  background-color: $color-accent !important;
 }
 
-.progress-bar-danger {
-  background-color: #ee3b24;
-}
+.btn-outline-danger {
+  color: $color-accent;
+  border-color: $color-accent !important;
 
-.carousel-inner > .item img {
-  width: 100%;
-
-  filter: brightness(0.7) saturate(0.3);
-}
-
-.carousel-fade .carousel-inner {
-  background-color: #111111;
-}
-
-.carousel-inner > .item {
-  overflow: hidden;
-
-  max-height: 100vh;
-}
-
-.carousel-caption {
-  right: 0;
-  left: 0;
-
-  display: flex;
-
-  width: 100%;
-  height: 100%;
-  padding-right: 15%;
-  padding-bottom: 0;
-  padding-left: 15%;
-
-  align-items: center;
-  justify-content: center;
-
-  h3 {
-    text-transform: uppercase;
-
-    font-weight: bold;
-  }
-
-  p {
-    text-transform: uppercase;
+  &:hover,
+  &:focus {
+    background-color: $color-accent;
   }
 }

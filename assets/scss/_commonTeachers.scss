@@ -1,10 +1,6 @@
-* {
-  box-sizing: border-box;
-}
-
 html {
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
+  font-family: $font-main;
+  font-size: $font-size;
 }
 
 body {
@@ -19,17 +15,30 @@ section {
   width: 100%;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1 {
+  @extend %header;
+}
+
+h2 {
+  @extend %header;
+}
+
+h3 {
+  @extend %header;
+}
+
+h4 {
   @extend %header;
 }
 
 h5 {
   font-size: 1.125rem;
+
+  @extend %header;
+}
+
+h6 {
+  @extend %header;
 }
 
 button:focus {
@@ -43,7 +52,7 @@ a {
   &:focus {
     text-decoration: none;
 
-    color: #ee3b24;
+    color: $color-accent;
   }
 }
 
