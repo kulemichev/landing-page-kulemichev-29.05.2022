@@ -208,21 +208,23 @@ a:focus {
 .about__item {
   margin-bottom: 30px;
 }
-.features {
-  background-color: #e5e5e5;
-}
-
 .feature {
   margin-bottom: 7.5px;
   padding-top: 7.5px;
 }
 
 .feature__title {
+  padding-top: 60px;
+
   text-align: center;
 }
 
 .feature__description {
   text-align: center;
+}
+
+.features {
+  background-color: #e5e5e5;
 }
 
 .features {
@@ -236,6 +238,8 @@ a:focus {
 }
 
 .features__title {
+  padding-top: 60px;
+
   text-align: center;
 }
 
@@ -609,6 +613,29 @@ a:focus {
   .features__description {
     margin-bottom: 45px;
   }
+  .feature__icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -ms-flex-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+
+    width: 80px;
+    height: 90px;
+    margin: 30px auto 60px;
+
+    color: #ffffff;
+    background: #ee3b24;
+
+    font-size: 1.5rem;
+
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  }
   .gallery__description {
     margin-bottom: 45px;
   }
@@ -657,7 +684,7 @@ a:focus {
     background-color: rgba(1, 1, 1, 0.85);
   }
   .about {
-    padding-top: 165px;
+    padding-top: 105px;
     padding-bottom: 90px;
   }
   .about__title {
