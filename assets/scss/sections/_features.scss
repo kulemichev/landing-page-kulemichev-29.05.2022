@@ -1,6 +1,7 @@
 .features {
-  @extend %section;
   background-color: #e5e5e5;
+
+  @extend %section;
 
   &__title {
     @extend %section-title;
