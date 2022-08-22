@@ -1,17 +1,19 @@
 .gallery {
+  @extend %section;
   display: flex;
-  align-content: center;
 
   min-height: 100vh;
-
-  @extend %section;
+  flex-wrap: wrap;
+  align-content: center;
 
   &__title {
     @extend %section-title;
+    text-align: center;
   }
 
   &__description {
     @extend %section-description;
+    text-align: center;
   }
 }
 
@@ -23,22 +25,13 @@
 
     min-height: 200px;
     max-height: 33.33vh;
-
-    &:hover {
-      top: 15%; // added
-      bottom: 15%; // added
-      opacity: 1; // added
-      transform: scale(1.8);
-    }
   }
 
   &__image {
     width: 100%;
-
+    transition: -webkit-transform 0.5s;
     transition: transform 0.5s;
-    &:hover {
-      transform: scale(1.8);
-    }
+    transition: transform 0.5s, -webkit-transform 0.5s;
   }
 
   &__caption {
@@ -53,10 +46,6 @@
 
     opacity: 0;
     background-color: rgba(1, 1, 1, 0.75);
-
-    &:hover {
-      opacity: 1;
-    }
   }
 
   &__title {
@@ -72,118 +61,106 @@
     color: #fefefe;
 
     font-weight: bold;
-
-    &:hover {
-      bottom: 15%;
-    }
   }
 
   &__link {
     position: relative;
     top: -50%;
-
     display: inline-flex;
-    align-items: center;
-    justify-content: center;
 
     width: 45px;
     height: 45px;
-
     transition: top 0.5s;
 
     color: #fefefe;
-    background-color: $color-accent;
-
-    &:hover,
-    &:focus {
-      color: $color-light;
-    }
-    &:hover {
-      top: 15%;
-    }
+    background-color: #ee3b24;
+    justify-content: center;
+    align-items: center;
   }
+}
 
-  // .gallery-item:hover .gallery-item__image {
-  //   transform: scale(1.8);
-  // }
+.gallery-item__link:hover,
+.gallery-item__link:focus {
+  color: #fefefe;
+}
 
-  // .gallery-item:hover .gallery-item__caption {
-  //   // opacity: 1;
-  // }
+.gallery-item:hover .gallery-item__image {
+  transform: scale(1.8);
+}
 
-  // .gallery-item:hover .gallery-item__title {
-  //   bottom: 15%;
-  // }
+.gallery-item:hover .gallery-item__caption {
+  opacity: 1;
+}
 
-  // .gallery-item:hover .gallery-item__link {
-  //   top: 15%;
-  // }
+.gallery-item:hover .gallery-item__title {
+  bottom: 15%;
+}
 
-  @media (min-width: 992px) {
-    .gallery {
-      padding-top: 105px;
-      padding-bottom: 90px;
-    }
+.gallery-item:hover .gallery-item__link {
+  top: 15%;
+}
+
+@media (min-width: 992px) {
+  .gallery {
+    padding-top: 105px;
+    padding-bottom: 90px;
     &__title {
       margin: 0 0 45px;
     }
   }
+}
 
-  @media (max-width: 991.8px) and (min-width: 768px) {
-    .gallery {
-      padding-top: 105px;
-      padding-bottom: 75px;
+@media (max-width: 991.8px) and (min-width: 768px) {
+  .gallery {
+    padding-top: 105px;
+    padding-bottom: 75px;
+    &__title {
+      margin: 0 0 37.5px;
+    }
+  }
+}
 
-      &__title {
-        margin: 0 0 37.5px;
-      }
-      &__description {
-        margin-bottom: 45px;
-      }
+@media (min-width: 768px) {
+  .gallery__description {
+    margin-bottom: 45px;
+  }
+}
+@media (max-width: 767.8px) {
+  .gallery__description {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 767.8px) and (min-width: 576px) {
+  .gallery {
+    padding-top: 90px;
+    padding-bottom: 60px;
+    &__title {
+      margin: 0 0 30px;
+    }
+  }
+}
+
+@media (min-width: 576px) {
+  .gallery .container-fluid {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .gallery-item {
+    padding: 0 5px 10px;
+  }
+}
+
+@media (max-width: 575.8px) {
+  .gallery {
+    padding-top: 90px;
+    padding-bottom: 45px;
+    &__title {
+      margin: 0 0 22.5px;
     }
   }
 
-  @media (max-width: 767.8px) and (min-width: 576px) {
-    .gallery {
-      padding-top: 90px;
-      padding-bottom: 60px;
-
-      &__title {
-        margin: 0 0 30px;
-      }
-      &__description {
-        margin-bottom: 30px;
-      }
-    }
-  }
-
-  @media (min-width: 576px) {
-    .gallery {
-      border: solid 2px violet;
-      border-color: red;
-      background-color: aqua;
-    }
-    .gallery .container-fluid {
-      padding-right: 30px;
-      padding-left: 30px;
-    }
-    .gallery-item {
-      padding: 0 5px 10px;
-    }
-  }
-
-  @media (max-width: 575.8px) {
-    .gallery {
-      padding-top: 90px;
-      padding-bottom: 45px;
-
-      &__title {
-        margin: 0 0 22.5px;
-      }
-    }
-
-    .gallery-item {
-      padding: 0 15px 15px;
-    }
+  .gallery-item {
+    padding: 0 15px 15px;
   }
 }
