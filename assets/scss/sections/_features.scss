@@ -1,41 +1,37 @@
 .features {
+  @extend %section;
   background-color: #e5e5e5;
-}
-.features {
-  display: flex;
-  align-content: center;
 
-  min-height: 100vh;
-}
+  &__title {
+    @extend %section-title;
+  }
 
-.features__title {
-  text-align: center;
+  &__description {
+    @extend %section-description;
+  }
 }
 
-.features__description {
-  text-align: center;
-}
 .feature {
   margin-bottom: 7.5px;
   padding-top: 7.5px;
-}
 
-.feature__title {
-  text-align: center;
-}
+  &__title {
+    text-align: center;
+  }
 
-.feature__description {
-  text-align: center;
+  &__description {
+    text-align: center;
+  }
 }
 
 @media (min-width: 992px) {
   .features {
     padding-top: 105px;
     padding-bottom: 90px;
-  }
 
-  .features__title {
-    margin: 0 0 45px;
+    &__title {
+      margin: 0 0 45px;
+    }
   }
 }
 
@@ -43,10 +39,9 @@
   .features {
     padding-top: 105px;
     padding-bottom: 75px;
-  }
-
-  .features__title {
-    margin: 0 0 37.5px;
+    &__title {
+      margin: 0 0 37.5px;
+    }
   }
 }
 
@@ -64,8 +59,8 @@
     height: 90px;
     margin: 30px auto 60px;
 
-    color: #ffffff;
-    background: #ee3b24;
+    color: $color-light;
+    background: $color-accent;
 
     font-size: 2rem;
 
@@ -87,8 +82,8 @@
       height: 76.5px;
       margin: 25.5px auto 51px;
 
-      color: #ffffff;
-      background: #ee3b24;
+      color: $color-light;
+      background: $color-accent;
 
       font-size: 1.5rem;
 
