@@ -1,26 +1,23 @@
 .about {
-  display: flex;
-  align-content: center;
+  @extend %section;
 
-  min-height: 100vh;
-}
+  &__title {
+    @extend %section-title;
+  }
 
-.about__title {
-  text-align: center;
-}
-
-.about__item {
-  margin-bottom: 30px;
+  &__item {
+    margin-bottom: 30px;
+  }
 }
 
 @media (min-width: 992px) {
   .about {
     padding-top: 105px;
     padding-bottom: 90px;
-  }
-  .about__title {
-    margin: 0 0 45px;
-    padding-top: 62.5px;
+
+    &__title {
+      margin: 0 0 45px;
+    }
   }
 }
 
@@ -28,9 +25,10 @@
   .about {
     padding-top: 105px;
     padding-bottom: 75px;
-  }
-  .about__title {
-    margin: 0 0 37.5px;
+
+    &__title {
+      margin: 0 0 37.5px;
+    }
   }
 }
 
@@ -38,9 +36,10 @@
   .about {
     padding-top: 90px;
     padding-bottom: 60px;
-  }
-  .about__title {
-    margin: 0 0 30px;
+
+    &__title {
+      margin: 0 0 30px;
+    }
   }
 }
 
@@ -48,8 +47,9 @@
   .about {
     padding-top: 90px;
     padding-bottom: 45px;
-  }
-  .about__title {
-    margin: 0 0 22.5px;
+
+    &__title {
+      margin: 0 0 22.5px;
+    }
   }
 }

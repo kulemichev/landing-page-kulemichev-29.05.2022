@@ -13,7 +13,8 @@ h6 {
 .advantages__content,
 .blog,
 .gallery,
-.features {
+.features,
+.about {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -29,7 +30,8 @@ h6 {
 .advantages__title,
 .blog__title,
 .gallery__title,
-.features__title {
+.features__title,
+.about__title {
   text-align: center;
 }
 
@@ -221,20 +223,6 @@ a:focus {
   color: #fefefe;
 
   font-size: 1.75rem;
-}
-
-.about {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-line-pack: center;
-  align-content: center;
-
-  min-height: 100vh;
-}
-
-.about__title {
-  text-align: center;
 }
 
 .about__item {
@@ -571,7 +559,8 @@ a:focus {
   .advantages__content,
   .blog,
   .gallery,
-  .features {
+  .features,
+  .about {
     padding-top: 105px;
     padding-bottom: 90px;
   }
@@ -579,7 +568,8 @@ a:focus {
   .advantages__title,
   .blog__title,
   .gallery__title,
-  .features__title {
+  .features__title,
+  .about__title {
     margin: 0 0 45px;
   }
   .nav-link::after {
@@ -617,7 +607,6 @@ a:focus {
   }
   .about__title {
     margin: 0 0 45px;
-    padding-top: 62.5px;
   }
   .features {
     padding-top: 105px;
@@ -695,7 +684,8 @@ a:focus {
   .advantages__content,
   .blog,
   .gallery,
-  .features {
+  .features,
+  .about {
     padding-top: 105px;
     padding-bottom: 75px;
   }
@@ -703,7 +693,8 @@ a:focus {
   .advantages__title,
   .blog__title,
   .gallery__title,
-  .features__title {
+  .features__title,
+  .about__title {
     margin: 0 0 37.5px;
   }
   .about {
@@ -821,7 +812,8 @@ a:focus {
   .advantages__content,
   .blog,
   .gallery,
-  .features {
+  .features,
+  .about {
     padding-top: 90px;
     padding-bottom: 60px;
   }
@@ -829,7 +821,8 @@ a:focus {
   .advantages__title,
   .blog__title,
   .gallery__title,
-  .features__title {
+  .features__title,
+  .about__title {
     margin: 0 0 30px;
   }
   .about {
@@ -869,7 +862,8 @@ a:focus {
   .advantages__content,
   .blog,
   .gallery,
-  .features {
+  .features,
+  .about {
     padding-top: 90px;
     padding-bottom: 45px;
   }
@@ -877,7 +871,8 @@ a:focus {
   .advantages__title,
   .blog__title,
   .gallery__title,
-  .features__title {
+  .features__title,
+  .about__title {
     margin: 0 0 22.5px;
   }
   .about {
