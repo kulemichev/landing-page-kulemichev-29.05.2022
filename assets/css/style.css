@@ -268,24 +268,6 @@ a:focus {
 .feature__description {
   text-align: center;
 }
-.gallery {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-line-pack: center;
-  align-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-
-  min-height: 100vh;
-}
-.gallery__title {
-  text-align: center;
-}
-.gallery__description {
-  text-align: center;
-}
-
 .gallery-item__wrapper {
   position: relative;
 
@@ -358,7 +340,6 @@ a:focus {
   color: #fefefe;
   background-color: #ee3b24;
 }
-
 .gallery-item__link:hover,
 .gallery-item__link:focus {
   color: #fefefe;
