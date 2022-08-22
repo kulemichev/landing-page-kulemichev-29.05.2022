@@ -69,22 +69,22 @@
       color: $color-light;
     }
   }
-}
 
-.gallery-item:hover .gallery-item__image {
-  transform: scale(1.8);
-}
+  &:hover {
+    .gallery-item__image {
+      transform: scale(1.8);
+    }
 
-.gallery-item:hover .gallery-item__caption {
-  opacity: 1;
-}
-
-.gallery-item:hover .gallery-item__title {
-  bottom: 15%;
-}
-
-.gallery-item:hover .gallery-item__link {
-  top: 15%;
+    .gallery-item__caption {
+      opacity: 1;
+    }
+    .gallery-item__title {
+      bottom: 15%;
+    }
+    .gallery-item__link {
+      top: 15%;
+    }
+  }
 }
 
 @media (min-width: 992px) {
