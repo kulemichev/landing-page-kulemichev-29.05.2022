@@ -57,6 +57,8 @@
 
   .feature__icon {
     display: flex;
+    align-items: center;
+    justify-content: center;
 
     width: 80px;
     height: 90px;
@@ -66,8 +68,7 @@
     background: #ee3b24;
 
     font-size: 2rem;
-    align-items: center;
-    justify-content: center;
+
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   }
 }
@@ -79,6 +80,8 @@
   @media (max-width: 767.8px) {
     .feature__icon {
       display: flex;
+      align-items: center;
+      justify-content: center;
 
       width: 68px;
       height: 76.5px;
@@ -88,8 +91,7 @@
       background: #ee3b24;
 
       font-size: 1.5rem;
-      align-items: center;
-      justify-content: center;
+
       clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     }
   }

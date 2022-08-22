@@ -8,13 +8,13 @@
   }
   .navbar-nav {
     .nav-item {
-      padding-right: calc($gap / 2);
-      padding-left: calc($gap / 2);
+      padding-right: $gap / 2;
+      padding-left: $gap / 2;
     }
 
     .nav-link {
-      padding-right: calc($gap / 2);
-      padding-left: calc($gap / 2);
+      padding-right: $gap / 2;
+      padding-left: $gap / 2;
 
       color: $color-light;
 
@@ -37,7 +37,7 @@
 
 .progress {
   @include lg-min {
-    height: calc($gap * 4 / 3);
+    height: $gap * 4 / 3;
   }
 }
 
