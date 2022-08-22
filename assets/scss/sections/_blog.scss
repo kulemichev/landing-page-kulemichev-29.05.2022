@@ -72,12 +72,9 @@
 
 .blog-item__link:hover .blog-item__image img,
 .blog-item__link:focus .blog-item__image img {
-  -webkit-transform: scale(1.25);
-      -ms-transform: scale(1.25);
-          transform: scale(1.25);
+  transform: scale(1.25);
 
-  -webkit-filter: saturate(1.5);
-          filter: saturate(1.5);
+  filter: saturate(1.5);
 }
 
 .blog-item__link:hover .blog-item__post::before,

@@ -1,61 +1,61 @@
 .footer {
   font-size: 0.875rem;
-}
 
-.footer h3 {
-  color: #cbcbcb;
-}
+  h3 {
+    color: #cbcbcb;
 
-.footer h3::first-letter {
-  color: #ee3b24;
-}
+    &::first-letter {
+      color: $color-accent;
+    }
+  }
 
-.footer ul {
-  padding-left: 30px;
+  ul {
+    padding-left: 30px;
 
-  list-style: none;
-}
+    list-style: none;
+  }
 
-.footer li {
-  position: relative;
-}
+  li {
+    position: relative;
 
-.footer li::before {
-  position: absolute;
+    &::before {
+      position: absolute;
 
-  margin-left: -30px;
+      margin-left: -30px;
 
-  content: "\f30b";
+      content: "\f30b";
 
-  color: #b2b2b2;
+      color: #b2b2b2;
 
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-}
+      font-family: $font-icon;
+      font-weight: 900;
+    }
+  }
 
-.footer p {
-  color: #b2b2b2;
-}
+  p {
+    color: #b2b2b2;
+  }
 
-.footer a {
-  color: #b2b2b2;
-}
+  a {
+    color: #b2b2b2;
 
-.footer a:hover,
-.footer a:focus {
-  color: #fefefe;
-}
+    &:hover,
+    &:focus {
+      color: $color-light;
+    }
+  }
 
-.footer__top {
-  padding-top: 45px;
-  padding-bottom: 30px;
+  &__top {
+    padding-top: 45px;
+    padding-bottom: 30px;
 
-  background-color: #282828;
-}
+    background-color: #282828;
+  }
 
-.footer__bottom {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  &__bottom {
+    padding-top: 30px;
+    padding-bottom: 30px;
 
-  background-color: #343434;
+    background-color: #343434;
+  }
 }
