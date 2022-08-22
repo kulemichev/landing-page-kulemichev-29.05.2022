@@ -16,7 +16,6 @@
     @extend %section-title;
   }
   &__description {
-    // text-align: center;
     @extend %section-description;
   }
 }
@@ -28,14 +27,14 @@
 
   &__icon {
     flex-grow: 0;
-  }
 
-  &__icon i {
-    margin-top: 7.5px;
+    i {
+      margin-top: 7.5px;
 
-    text-align: center;
+      text-align: center;
 
-    color: #ee3b24;
+      color: $color-accent;
+    }
   }
 }
 
